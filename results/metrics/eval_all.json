@@ -1,0 +1,694 @@
+{
+  "pilotnet": {
+    "model": "pilotnet",
+    "grid": [
+      {
+        "mse": 0.026204008609056473,
+        "mae": 0.127021923661232,
+        "n": 360,
+        "condition": "clean",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.026204008609056473,
+        "mae": 0.127021923661232,
+        "n": 360,
+        "condition": "glare",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.026125412434339523,
+        "mae": 0.1267239898443222,
+        "n": 360,
+        "condition": "glare",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.027073096483945847,
+        "mae": 0.12739963829517365,
+        "n": 360,
+        "condition": "glare",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.028988977894186974,
+        "mae": 0.12816303968429565,
+        "n": 360,
+        "condition": "glare",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.031704239547252655,
+        "mae": 0.12995801866054535,
+        "n": 360,
+        "condition": "glare",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.026204008609056473,
+        "mae": 0.127021923661232,
+        "n": 360,
+        "condition": "rain",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.025414159521460533,
+        "mae": 0.12347568571567535,
+        "n": 360,
+        "condition": "rain",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.02482845075428486,
+        "mae": 0.12229461967945099,
+        "n": 360,
+        "condition": "rain",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.02533845603466034,
+        "mae": 0.12192241102457047,
+        "n": 360,
+        "condition": "rain",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.028402158990502357,
+        "mae": 0.12585888803005219,
+        "n": 360,
+        "condition": "rain",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.026204008609056473,
+        "mae": 0.127021923661232,
+        "n": 360,
+        "condition": "occlusion",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.02669738046824932,
+        "mae": 0.13013328611850739,
+        "n": 360,
+        "condition": "occlusion",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.027707932516932487,
+        "mae": 0.13085512816905975,
+        "n": 360,
+        "condition": "occlusion",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.030783195048570633,
+        "mae": 0.13461066782474518,
+        "n": 360,
+        "condition": "occlusion",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.0373934730887413,
+        "mae": 0.14739811420440674,
+        "n": 360,
+        "condition": "occlusion",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.026204008609056473,
+        "mae": 0.127021923661232,
+        "n": 360,
+        "condition": "mixed",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.025021934881806374,
+        "mae": 0.12307708710432053,
+        "n": 360,
+        "condition": "mixed",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.02715132012963295,
+        "mae": 0.1275116354227066,
+        "n": 360,
+        "condition": "mixed",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.026537012308835983,
+        "mae": 0.12483546882867813,
+        "n": 360,
+        "condition": "mixed",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.035078588873147964,
+        "mae": 0.13640934228897095,
+        "n": 360,
+        "condition": "mixed",
+        "severity": 1.0
+      }
+    ]
+  },
+  "cnn_lstm": {
+    "model": "cnn_lstm",
+    "grid": [
+      {
+        "mse": 0.026321174576878548,
+        "mae": 0.12730640172958374,
+        "n": 360,
+        "condition": "clean",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.026321174576878548,
+        "mae": 0.12730640172958374,
+        "n": 360,
+        "condition": "glare",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.025425177067518234,
+        "mae": 0.12466774880886078,
+        "n": 360,
+        "condition": "glare",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.024973945692181587,
+        "mae": 0.12188125401735306,
+        "n": 360,
+        "condition": "glare",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.0253689456731081,
+        "mae": 0.12032770365476608,
+        "n": 360,
+        "condition": "glare",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.026498110964894295,
+        "mae": 0.1197100356221199,
+        "n": 360,
+        "condition": "glare",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.026321174576878548,
+        "mae": 0.12730640172958374,
+        "n": 360,
+        "condition": "rain",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.02474488690495491,
+        "mae": 0.12234893441200256,
+        "n": 360,
+        "condition": "rain",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.02427607588469982,
+        "mae": 0.12075388431549072,
+        "n": 360,
+        "condition": "rain",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.023915408179163933,
+        "mae": 0.11991000920534134,
+        "n": 360,
+        "condition": "rain",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.024805331602692604,
+        "mae": 0.1202470138669014,
+        "n": 360,
+        "condition": "rain",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.026321174576878548,
+        "mae": 0.12730640172958374,
+        "n": 360,
+        "condition": "occlusion",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.025752512738108635,
+        "mae": 0.12611134350299835,
+        "n": 360,
+        "condition": "occlusion",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.026234032586216927,
+        "mae": 0.12544085085391998,
+        "n": 360,
+        "condition": "occlusion",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.026530327275395393,
+        "mae": 0.12373076379299164,
+        "n": 360,
+        "condition": "occlusion",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.031051170080900192,
+        "mae": 0.13511493802070618,
+        "n": 360,
+        "condition": "occlusion",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.026321174576878548,
+        "mae": 0.12730640172958374,
+        "n": 360,
+        "condition": "mixed",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.025160249322652817,
+        "mae": 0.12370865046977997,
+        "n": 360,
+        "condition": "mixed",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.024750860407948494,
+        "mae": 0.12162954360246658,
+        "n": 360,
+        "condition": "mixed",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.024491649121046066,
+        "mae": 0.12000121176242828,
+        "n": 360,
+        "condition": "mixed",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.027858374640345573,
+        "mae": 0.12452876567840576,
+        "n": 360,
+        "condition": "mixed",
+        "severity": 1.0
+      }
+    ]
+  },
+  "cnn_lstm_attention": {
+    "model": "cnn_lstm_attention",
+    "grid": [
+      {
+        "mse": 0.027404937893152237,
+        "mae": 0.1302078813314438,
+        "n": 360,
+        "attn_corrupt_mean": null,
+        "attn_clean_mean": 0.20000000298023224,
+        "condition": "clean",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.027404937893152237,
+        "mae": 0.1302078813314438,
+        "n": 360,
+        "attn_corrupt_mean": null,
+        "attn_clean_mean": 0.20000000298023224,
+        "condition": "glare",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.026012206450104713,
+        "mae": 0.12581545114517212,
+        "n": 360,
+        "attn_corrupt_mean": 0.19990479946136475,
+        "attn_clean_mean": 0.20014281570911407,
+        "condition": "glare",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.025062743574380875,
+        "mae": 0.12125617265701294,
+        "n": 360,
+        "attn_corrupt_mean": 0.1997489631175995,
+        "attn_clean_mean": 0.20037652552127838,
+        "condition": "glare",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.025128766894340515,
+        "mae": 0.11858036369085312,
+        "n": 360,
+        "attn_corrupt_mean": 0.19959188997745514,
+        "attn_clean_mean": 0.2006121724843979,
+        "condition": "glare",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.02607758343219757,
+        "mae": 0.11668351292610168,
+        "n": 360,
+        "attn_corrupt_mean": 0.19945628941059113,
+        "attn_clean_mean": 0.20081554353237152,
+        "condition": "glare",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.027404937893152237,
+        "mae": 0.1302078813314438,
+        "n": 360,
+        "attn_corrupt_mean": null,
+        "attn_clean_mean": 0.20000000298023224,
+        "condition": "rain",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.02615085244178772,
+        "mae": 0.1261591613292694,
+        "n": 360,
+        "attn_corrupt_mean": 0.19994182884693146,
+        "attn_clean_mean": 0.20008724927902222,
+        "condition": "rain",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.025509119033813477,
+        "mae": 0.12350838631391525,
+        "n": 360,
+        "attn_corrupt_mean": 0.19983984529972076,
+        "attn_clean_mean": 0.20024023950099945,
+        "condition": "rain",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.02529057487845421,
+        "mae": 0.12103850394487381,
+        "n": 360,
+        "attn_corrupt_mean": 0.1997462660074234,
+        "attn_clean_mean": 0.2003805786371231,
+        "condition": "rain",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.02500566840171814,
+        "mae": 0.11886074393987656,
+        "n": 360,
+        "attn_corrupt_mean": 0.19982191920280457,
+        "attn_clean_mean": 0.20026710629463196,
+        "condition": "rain",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.027404937893152237,
+        "mae": 0.1302078813314438,
+        "n": 360,
+        "attn_corrupt_mean": null,
+        "attn_clean_mean": 0.20000000298023224,
+        "condition": "occlusion",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.026763858273625374,
+        "mae": 0.12742675840854645,
+        "n": 360,
+        "attn_corrupt_mean": 0.19999872148036957,
+        "attn_clean_mean": 0.20000191032886505,
+        "condition": "occlusion",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.025898588821291924,
+        "mae": 0.12369485199451447,
+        "n": 360,
+        "attn_corrupt_mean": 0.19995148479938507,
+        "attn_clean_mean": 0.200072780251503,
+        "condition": "occlusion",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.025009626522660255,
+        "mae": 0.12050846964120865,
+        "n": 360,
+        "attn_corrupt_mean": 0.19993114471435547,
+        "attn_clean_mean": 0.2001032680273056,
+        "condition": "occlusion",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.027760492637753487,
+        "mae": 0.12712523341178894,
+        "n": 360,
+        "attn_corrupt_mean": 0.19991739094257355,
+        "attn_clean_mean": 0.2001238912343979,
+        "condition": "occlusion",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.027404937893152237,
+        "mae": 0.1302078813314438,
+        "n": 360,
+        "attn_corrupt_mean": null,
+        "attn_clean_mean": 0.20000000298023224,
+        "condition": "mixed",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.026447078213095665,
+        "mae": 0.12732550501823425,
+        "n": 360,
+        "attn_corrupt_mean": 0.19999557733535767,
+        "attn_clean_mean": 0.2000066488981247,
+        "condition": "mixed",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.02609040029346943,
+        "mae": 0.12398556619882584,
+        "n": 360,
+        "attn_corrupt_mean": 0.1998535841703415,
+        "attn_clean_mean": 0.20021961629390717,
+        "condition": "mixed",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.02502499334514141,
+        "mae": 0.12010940164327621,
+        "n": 360,
+        "attn_corrupt_mean": 0.1997116655111313,
+        "attn_clean_mean": 0.20043250918388367,
+        "condition": "mixed",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.025854237377643585,
+        "mae": 0.11666469275951385,
+        "n": 360,
+        "attn_corrupt_mean": 0.19967623054981232,
+        "attn_clean_mean": 0.20048567652702332,
+        "condition": "mixed",
+        "severity": 1.0
+      }
+    ]
+  },
+  "cnn_lstm_featattn": {
+    "model": "cnn_lstm_featattn",
+    "grid": [
+      {
+        "mse": 0.026627345010638237,
+        "mae": 0.12612207233905792,
+        "n": 360,
+        "attn_corrupt_mean": null,
+        "attn_clean_mean": 0.20000000298023224,
+        "condition": "clean",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.026627345010638237,
+        "mae": 0.12612207233905792,
+        "n": 360,
+        "attn_corrupt_mean": null,
+        "attn_clean_mean": 0.20000000298023224,
+        "condition": "glare",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.02509692683815956,
+        "mae": 0.1219533309340477,
+        "n": 360,
+        "attn_corrupt_mean": 0.19939196109771729,
+        "attn_clean_mean": 0.20091205835342407,
+        "condition": "glare",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.024029461666941643,
+        "mae": 0.11848846822977066,
+        "n": 360,
+        "attn_corrupt_mean": 0.19848737120628357,
+        "attn_clean_mean": 0.20226894319057465,
+        "condition": "glare",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.024141831323504448,
+        "mae": 0.11639431864023209,
+        "n": 360,
+        "attn_corrupt_mean": 0.19748735427856445,
+        "attn_clean_mean": 0.20376896858215332,
+        "condition": "glare",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.025269510224461555,
+        "mae": 0.11531604826450348,
+        "n": 360,
+        "attn_corrupt_mean": 0.19659240543842316,
+        "attn_clean_mean": 0.20511141419410706,
+        "condition": "glare",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.026627345010638237,
+        "mae": 0.12612207233905792,
+        "n": 360,
+        "attn_corrupt_mean": null,
+        "attn_clean_mean": 0.20000000298023224,
+        "condition": "rain",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.02475169487297535,
+        "mae": 0.12110353261232376,
+        "n": 360,
+        "attn_corrupt_mean": 0.19984127581119537,
+        "attn_clean_mean": 0.20023806393146515,
+        "condition": "rain",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.0239717960357666,
+        "mae": 0.11804957687854767,
+        "n": 360,
+        "attn_corrupt_mean": 0.19951888918876648,
+        "attn_clean_mean": 0.2007216513156891,
+        "condition": "rain",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.02354111149907112,
+        "mae": 0.11497227102518082,
+        "n": 360,
+        "attn_corrupt_mean": 0.19911643862724304,
+        "attn_clean_mean": 0.20132535696029663,
+        "condition": "rain",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.023362191393971443,
+        "mae": 0.11365825682878494,
+        "n": 360,
+        "attn_corrupt_mean": 0.19867093861103058,
+        "attn_clean_mean": 0.20199355483055115,
+        "condition": "rain",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.026627345010638237,
+        "mae": 0.12612207233905792,
+        "n": 360,
+        "attn_corrupt_mean": null,
+        "attn_clean_mean": 0.20000000298023224,
+        "condition": "occlusion",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.025706324726343155,
+        "mae": 0.1240919679403305,
+        "n": 360,
+        "attn_corrupt_mean": 0.20010507106781006,
+        "attn_clean_mean": 0.1998424082994461,
+        "condition": "occlusion",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.025057675316929817,
+        "mae": 0.12134899199008942,
+        "n": 360,
+        "attn_corrupt_mean": 0.20089603960514069,
+        "attn_clean_mean": 0.19865591824054718,
+        "condition": "occlusion",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.024808401241898537,
+        "mae": 0.1208728477358818,
+        "n": 360,
+        "attn_corrupt_mean": 0.20086446404457092,
+        "attn_clean_mean": 0.19870330393314362,
+        "condition": "occlusion",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.02938210405409336,
+        "mae": 0.1330312043428421,
+        "n": 360,
+        "attn_corrupt_mean": 0.20025618374347687,
+        "attn_clean_mean": 0.1996157318353653,
+        "condition": "occlusion",
+        "severity": 1.0
+      },
+      {
+        "mse": 0.026627345010638237,
+        "mae": 0.12612207233905792,
+        "n": 360,
+        "attn_corrupt_mean": null,
+        "attn_clean_mean": 0.20000000298023224,
+        "condition": "mixed",
+        "severity": 0.0
+      },
+      {
+        "mse": 0.025439977645874023,
+        "mae": 0.12342909723520279,
+        "n": 360,
+        "attn_corrupt_mean": 0.19967058300971985,
+        "attn_clean_mean": 0.20049415528774261,
+        "condition": "mixed",
+        "severity": 0.25
+      },
+      {
+        "mse": 0.024919472634792328,
+        "mae": 0.1198052167892456,
+        "n": 360,
+        "attn_corrupt_mean": 0.1994088590145111,
+        "attn_clean_mean": 0.20088671147823334,
+        "condition": "mixed",
+        "severity": 0.5
+      },
+      {
+        "mse": 0.02400299534201622,
+        "mae": 0.11755507439374924,
+        "n": 360,
+        "attn_corrupt_mean": 0.1991347372531891,
+        "attn_clean_mean": 0.20129789412021637,
+        "condition": "mixed",
+        "severity": 0.75
+      },
+      {
+        "mse": 0.024362808093428612,
+        "mae": 0.11439109593629837,
+        "n": 360,
+        "attn_corrupt_mean": 0.19847112894058228,
+        "attn_clean_mean": 0.2022933065891266,
+        "condition": "mixed",
+        "severity": 1.0
+      }
+    ]
+  }
+}

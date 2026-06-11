@@ -1,0 +1,55 @@
+# ------------------------------------------------------------------
+# Central configuration for the temporal-attention self-driving study
+# Override any field on the CLI, e.g.  python -m src.train --model cnn_lstm --epochs 30
+# ------------------------------------------------------------------
+
+seed: 42
+device: auto            # auto | cuda | cpu
+
+data:
+  root: data/make       # folder containing driving_log.csv + IMG/  (lake track; use data/jungle for the harder track)
+  image_size: [66, 200] # (H, W) — NVIDIA PilotNet input size
+  seq_len: 5            # frames per temporal sample (used by LSTM/attention models)
+  stride: 1            # step between consecutive sequence windows
+  val_split: 0.2
+  use_side_cameras: true   # use left/right cams w/ steering offset for augmentation
+  steering_correction: 0.2 # +/- offset applied to left/right camera steering labels
+  batch_size: 128
+  num_workers: 0
+  # ---- steering-imbalance handling: downsample near-straight windows so the model
+  #      learns to turn and the eval set isn't dominated by ~0 steering ----
+  balance_steering: true
+  zero_threshold: 0.05     # |steering| below this counts as "straight"
+  zero_keep_frac: 0.3      # keep this fraction of straight windows (1.0 = disable)
+  # ---- noise injected at TRAIN time (augmentation). Set enabled:false for clean training ----
+  train_noise:
+    enabled: true       # MUST be true for the attention model to learn frame suppression
+    p: 0.7              # probability a given sample gets corrupted
+    max_severity: 0.8
+
+  # ---- noise conditions used at EVAL time (robustness sweep) ----
+  eval_noise:
+    conditions: [clean, glare, rain, occlusion, frame_drop, mixed]
+    severities: [0.0, 0.25, 0.5, 0.75, 1.0]
+    # fraction of frames within a sequence that get corrupted at eval time
+    corrupt_frac: 0.6
+
+model:
+  # one of: pilotnet | cnn_lstm | cnn_lstm_attention | all
+  name: cnn_lstm_attention
+  cnn_feature_dim: 256   # size of the per-frame CNN embedding
+  lstm_hidden: 128
+  lstm_layers: 1
+  attention_dim: 64      # hidden dim of the temporal attention scorer
+  dropout: 0.3
+
+train:
+  epochs: 30
+  lr: 1.0e-4
+  weight_decay: 1.0e-5
+  grad_clip: 1.0
+  early_stop_patience: 8
+  out_dir: results
+
+log:
+  every_n_steps: 20
